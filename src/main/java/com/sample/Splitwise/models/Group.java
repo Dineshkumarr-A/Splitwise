@@ -21,7 +21,7 @@ public class Group extends BaseModel{
     @OneToMany(mappedBy = "group") // This mention the relationship between group and expense
     // is also represented on the expense class as well. Hibernate will consider them as two different unique mapping
     // So add a mapped key word the properties.
-    private List<Expense> expense;
+    private List<Expense> expenses;
 
     @ManyToOne
     private User createdBy; //One group can be created by one person
